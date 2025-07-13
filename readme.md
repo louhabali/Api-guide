@@ -422,8 +422,10 @@ Authorization: Bearer abc123
 ]
 ```
 ### Common errors 
-**401 Unauthorized** — if the token is missing or invalid
+```http
+**401 Unauthorized** — if the token is missing or invalid<br>
 **404 Not Found** — if the page number is out of range<br>
+```
 ---
 ### Example Toolchain
 
