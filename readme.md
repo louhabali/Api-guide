@@ -411,5 +411,4 @@ Well-documented APIs improve adoption and usability.
 * [Postman Collections](https://www.postman.com/)
 
 ---
-
-Let me know if you'd like a cheat sheet or a visual diagram for any section!
+© 2025 Ali Louhab. All rights reserved.
