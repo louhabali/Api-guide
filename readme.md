@@ -430,10 +430,11 @@ Authorization: Bearer abc123
 ### Example Toolchain
 
 Here are some popular tools to help you create and view API documentation:<br>
-**Swagger UI:** View and test your API with interactive docs in the browser.
 
-**Redoc:** Generate clean, easy-to-read documentation from OpenAPI files.
+`Swagger UI`: View and test your API with interactive docs in the browser.
 
-**Postman Collections**: Share and test API requests easily with teams.
+`Redoc`: Generate clean, easy-to-read documentation from OpenAPI files.
+
+`Postman Collections`: Share and test API requests easily with teams.<br>
 ---
 © 2025 Ali Louhab. All rights reserved.
