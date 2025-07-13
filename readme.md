@@ -415,10 +415,12 @@ GET /users?page=2
 Authorization: Bearer abc123
 ```
 ### Example Respone 
+```http
 [
   { "id": 11, "name": "Ali" },
   { "id": 12, "name": "Sara" }
 ]
+```
 ### Common errors 
 
 **401 Unauthorized** — if the token is missing or invalid
