@@ -392,49 +392,51 @@ Idempotency helps your app handle retries safely without breaking things or crea
 
 ## 11. 📝 Documenting REST APIs
 
-Well-documented APIs improve adoption and usability.
-
-## Best Practices for API Documentation
-
 Good API docs help developers understand and use your API without confusion. Here’s how to make your docs great:
 
-- Use **OpenAPI (Swagger)** to describe your API in a standard format. This lets tools create interactive docs automatically.
+* Use **OpenAPI (Swagger)** to describe your API in a standard format. This lets tools create interactive docs automatically.
+* Clearly describe each API endpoint with:
 
-- Clearly describe each API endpoint with:  
-  - The **HTTP method** and URL (e.g., `GET /users`)  
-  - Any **query parameters** or **headers** needed (e.g., `?page=2`, `Authorization: Bearer <token>`)  
-  - Examples of **request bodies** (for POST/PUT/PATCH) and **responses**  
-  - Common **error codes** and their meanings (e.g., `404 Not Found`, `401 Unauthorized`)
+  * The **HTTP method** and URL (e.g., `GET /users`)
+  * Any **query parameters** or **headers** needed (e.g., `?page=2`, `Authorization: Bearer <token>`)
+  * Examples of **request bodies** (for POST/PUT/PATCH) and **responses**
+  * Common **error codes** and their meanings (e.g., `404 Not Found`, `401 Unauthorized`)
 
 ---
 
-### Example Request
+### 🔹 Example Request
 
 ```http
 GET /users?page=2
 Authorization: Bearer abc123
 ```
-### Example Respone 
-```http
+
+### 🔹 Example Response
+
+```json
 [
   { "id": 11, "name": "Ali" },
   { "id": 12, "name": "Sara" }
 ]
 ```
-### Common errors 
+
+### 🔹 Common Errors
+
 ```http
-"401 Unauthorized" — if the token is missing or invalid
-"404 Not Found" — if the page number is out of range
+401 Unauthorized — if the token is missing or invalid
+404 Not Found — if the page number is out of range
 ```
+
 ---
-### Example Toolchain
 
-Here are some popular tools to help you create and view API documentation:<br>
+### 🔹 Example Toolchain
 
-`Swagger UI`: View and test your API with interactive docs in the browser.
+Here are some popular tools to help you create and view API documentation:
 
-`Redoc`: Generate clean, easy-to-read documentation from OpenAPI files.
+* [**Swagger UI**](https://swagger.io/tools/swagger-ui/): Interactive UI to explore and test your API.
+* [**Redoc**](https://redoc.ly/): Beautiful static docs for OpenAPI specs.
+* [**Postman**](https://www.postman.com/): Tool for testing, documenting, and sharing APIs.
 
-`Postman Collections`: Share and test API requests easily with teams.<br>
 ---
+
 © 2025 Ali Louhab. All rights reserved.
